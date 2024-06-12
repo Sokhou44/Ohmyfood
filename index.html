@@ -6,6 +6,8 @@
     <title>Oh my food</title>
     <script src="https://kit.fontawesome.com/7e29abef9c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Shrikhand' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 </head>
 <body>
     <header class="header">
@@ -13,66 +15,131 @@
     </header>
     <main>
         <section class="localisation">
-            <i class="fa-solid fa-location-dot"></i>
+            <i class="fa-solid fa-location-dot icone-location"></i>
             <p>Paris, Belleville</p>
         </section>
         <Section class="reservation">
-            <H2>Réserver le menu qui vous convient</H2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <h2 class="reservation-title">Réserver le menu qui vous convient</h2>
+            <p class="reservation-text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button>Explorer nos restaurants</button>
         </Section>
-        <section class="fonctionnement">
-            <ol>
-                <li class="choix"><i class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</li>
-                <li class="menu"><i class="fa-solid fa-list-ul"></i></i>Composez votre menu</li>
-                <li class="deguster"><i class="fa-solid fa-store"></i></i>Dégustez au restaurant</li>
-            </ol>
+        <section class="tuto">
+            <h2 class="fonctionnement-title">Fonctionnement</h2>
+            <ul class="item-list-container">
+                <li class="item-list">
+                    <span class="item-list-number">1</span>
+                <div class="icone-fonctionnement">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                </div>
+                    <span class="item-list-text">Choisissez un restaurant</span>
+                </li>
+                <li class="item-list">
+                    <span class="item-list-number">2</span>
+                <div class="icone-fonctionnement">
+                    <i class="fa-solid fa-list-ul "></i>
+                </div>
+                    <span class="item-list-text">Composez votre menu</span>
+                </li>
+                <li class="item-list">
+                    <span class="item-list-number">3</span>
+                <div class="icone-fonctionnement">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                    <span class="item-list-text">Dégustez au restaurant</span>
+                </li>
+            </ul>
         </section>
         <!-- les cartes -->
         <section class="cards-restaurant">
             <h2>Restaurants</h2>
             <div class="cards-container">
+                <a href="page2.html" class="card-link"> 
                 <article class="card-custom">
+                    <div class="card-img">
                     <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="restaurant la palette du goût">
+                    <span class="card-badge">Nouveau</span>
+                           </div>
                                 <div class="card-content">
+                                    <div class="title-with-coeur">
                                         <h3 class="card-title">La palette du goût</h3>
-                                        <p class="card-subtitle">Ménilmontant<i class="fa-regular fa-heart"></i></p>
+                                        <div class="coeur"><i class="fa-regular fa-heart"></i></div>
+                                    </div>
+                                        <p class="card-subtitle">Ménilmontant</p>
                                     </div>
                 </article>
+            </a>
+            <a href="page3.html" class="card-link"> 
                 <article class="card-custom">
+                    <div class="card-img">
                     <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="restaurant la palette du goût">
+                       <span class="card-badge">Nouveau</span>
+                           </div>
                                 <div class="card-content">
+                                    <div class="title-with-coeur">
                                         <h3 class="card-title">La note enchantée</h3>
-                                        <p class="card-subtitle">Charonne<i class="fa-regular fa-heart"></i></p>
+                                        <div class="coeur"><i class="fa-regular fa-heart"></i></div>
                                     </div>
-                </article>
+                                        <p class="card-subtitle">Charonne</i></p>
+                                    </div>
+                                </article>
+                             </a>
+                <a href="page4.html" class="card-link">
                 <article class="card-custom">
                     <img src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant la palette du goût">
                                 <div class="card-content">
+                                    <div class="title-with-coeur">
                                         <h3 class="card-title">A la française</h3>
-                                        <p class="card-subtitle">Cité Rouge<i class="fa-regular fa-heart"></i></p>
+                                        <div class="coeur"><i class="fa-regular fa-heart"></i></div>
                                     </div>
-                </article>
+                                        <p class="card-subtitle">Cité Rouge</i></p>
+                                    </div>
+                                </article>
+                             </a>
+                <a href="page5.html" class="card-link">
                 <article class="card-custom">
                     <img src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="restaurant la palette du goût">
                                 <div class="card-content">
+                                    <div class="title-with-coeur">
                                         <h3 class="card-title">Le délice des sens</h3>
-                                        <p class="card-subtitle">Folie-Méricourt<i class="fa-regular fa-heart"></i></p>
+                                        <div class="coeur"><i class="fa-regular fa-heart"></i></div>
                                     </div>
-                </article>
+                                        <p class="card-subtitle">Folie-Méricourt</i></p>
+                                    </div>
+                                </article>
+                            </a>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer">
+    <footer class="footer">
+        <div class="footer-container">
             <h3>ohmyfood</h3>
-            <ul>
-                <li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li>
-                <li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li>Contact</li>
-            </ul>
+            <ul class="item-footer-container">
+                <a href="#">
+            <li class="item-footer">
+              <i class="fa-solid fa-utensils"></i>
+            <span class="item-list-text">Proposer un restaurant</span>
+            </li>
+        </a>
+        <a href="#">
+            <li class="item-footer">
+              <i class="fa-solid fa-handshake-angle"></i>
+                <span class="item-list-text">Devenir partenaire</span>
+            </li>
+        </a>
+        <a href="#">
+            <li class="item-footer">
+                <span class="item-list-text">Mentions légales</span>
+            </li>
+        </a>
+        <a href="#">
+            <li class="item-footer">
+                <span class="item-list-text">Contact</span>
+            </li>
+        </a>
+        </ul>
         </div>
     </footer>
+    
+    
 </body>
 </html>
