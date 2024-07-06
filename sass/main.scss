@@ -431,6 +431,7 @@ border-radius: 16px;
 background-color: white;
 box-shadow: -1px 6px 10px 2px rgba(166, 166, 166, 0.34);
 margin-bottom: 20px;
+overflow: hidden;
 }
 
 .card-content-menu {
@@ -443,9 +444,6 @@ padding-bottom: 16px;
 .card-content-menu h3 {
 margin-bottom: 5px;
 font-size: 22px;
-}
-
-.tronque {
 text-overflow: ellipsis;
 overflow: hidden;
 white-space: nowrap;
@@ -461,6 +459,9 @@ position: relative;
 .menu-item p {
 margin: 0;
 font-size: 16px;
+text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap;
 }
 
 .menu-price {
@@ -477,7 +478,6 @@ text-overflow: ellipsis;
 
 .card-specific {
 position: relative; 
-overflow: hidden; 
 }
 
 .menu-validate {
@@ -640,12 +640,6 @@ height: 24px;
 font-size: 14px;
 font-weight: bold;
 }
-
-.tronque {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    }
 
 .cards-container {
 grid-template-columns: repeat(2, 1fr);
