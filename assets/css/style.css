@@ -64,6 +64,7 @@ body {
 .header h1 {
   text-align: center;
   font-family: Shrikhand;
+  margin-top: 10px;
 }
 .header .header__arrow {
   display: flex;
@@ -81,23 +82,39 @@ h2 {
 .localisation {
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  padding: 6px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
   background-color: #EAEAEA;
   font-size: 1.2rem;
   box-shadow: 0px 5px 5px 0px rgb(170, 169, 169);
+  border: none;
+  margin-top: 62px;
+  text-align: center;
+  font-weight: bold;
+  height: 60px;
+  padding-left: 30px;
 }
 
 .icone-location {
-  display: flex;
-  justify-content: center;
-  padding: 21px 20px;
-  position: relative;
+  position: absolute;
+  left: 120px;
+  padding-top: 22px;
+  z-index: 1;
+  margin-bottom: -40px;
+  pointer-events: none;
 }
 
 .reservation-title {
   font-size: 35px;
   font-weight: bold;
+  margin-top: 60px;
 }
 
 .reservation-text {
@@ -158,7 +175,7 @@ button::after {
 }
 
 .fonctionnement-title {
-  margin-right: 10px;
+  margin-left: 16px;
 }
 
 .item-list-container {
@@ -551,9 +568,12 @@ button::after {
   .header {
     box-shadow: none;
   }
+  .header h1 {
+    padding-top: 20px;
+  }
   h2 {
     font-size: 24px;
-    padding-left: 100px;
+    padding-left: 110px;
   }
   .localisation {
     height: 40px;
@@ -561,8 +581,9 @@ button::after {
     font-size: 14px;
   }
   .icone-location {
-    font-size: 14px;
-    padding-top: 15px;
+    font-size: 12px;
+    padding-top: 10px;
+    left: 28rem;
   }
   .reservation {
     height: 230px;
@@ -570,24 +591,54 @@ button::after {
   button, .bnt-commander {
     width: 22%;
     height: 56px;
+    white-space: nowrap;
   }
   .fonctionnement-title {
-    padding-left: 150px;
+    padding-left: 110px;
     padding-top: 40px;
     font-size: 24px;
+  }
+  .reservation-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 60px;
+    padding-left: 40px;
+  }
+  .reservation-text {
+    font-size: 20px;
+    padding-left: 60px;
+    padding-bottom: -20px;
+  }
+  .item-list-container {
+    gap: 34px;
+  }
+  .item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f6f6f6;
+    border-radius: 30px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 20px;
+    white-space: nowrap;
+    box-shadow: -1px 3px 10px 2px rgba(166, 166, 166, 0.4);
   }
   .item-list-number {
     position: relative;
     background: #9356DC;
     border-radius: 25px;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     align-items: center;
     display: flex;
     justify-content: center;
     color: white;
-    font-size: 25px;
-    left: -44px;
+    font-size: 20px;
+    left: -34px;
   }
   .fa-store {
     color: #9356DC;
@@ -597,12 +648,12 @@ button::after {
     flex-direction: row;
     justify-content: space-between;
     background-color: white;
-    padding-left: 160px;
-    padding-right: 160px;
+    padding-left: 136px;
+    padding-right: 120px;
     padding-top: 0px;
   }
   .item-list {
-    width: 26%;
+    width: 30%;
     height: 24px;
   }
   .item-list-text {
@@ -611,8 +662,11 @@ button::after {
   }
   .cards-container {
     grid-template-columns: repeat(2, 1fr);
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+  .card-custom {
+    width: 98%;
   }
   .item-footer-container {
     display: flex;
@@ -624,6 +678,7 @@ button::after {
   .page-title {
     margin-left: 80px;
     padding-top: 20px;
+    font-size: 25px;
   }
   .icone-heart-menu {
     margin-left: 30px;
@@ -669,9 +724,29 @@ button::after {
     gap: 26px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1025px) and (max-width: 1299px) {
   .item-list-number {
-    left: -64px;
+    left: -50px;
+  }
+  .icone-location {
+    font-size: 12px;
+    padding-top: 22px;
+    left: 35rem;
+  }
+  .input {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    background-color: #EAEAEA;
+    font-size: 1.2rem;
+    box-shadow: 0px 5px 5px 0px rgb(170, 169, 169);
+    border: none;
+    margin-top: 62px;
+    text-align: center;
+    font-weight: bold;
+    height: 60px;
+    padding-left: 30px;
   }
 }
 
